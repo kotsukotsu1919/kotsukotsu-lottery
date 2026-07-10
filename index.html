@@ -1,99 +1,233 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>🎁こつこつ抽選メーカー</title>
+<title>じみちにこつこつ抽選メーカー</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<div class="container">
 
 <header>
-<h1>🎁こつこつ抽選メーカー</h1>
-<p>〜公平・簡単・爆速抽選〜</p>
+
+<h1>
+🐣 じみちにこつこつ抽選メーカー
+</h1>
+
+<p>
+X企画用ランダム抽選ツール
+</p>
+
 </header>
 
-<section class="card">
 
-<h2>🎁企画情報</h2>
+
+<main>
+
+
+<section class="box">
+
+
+<h2>
+🎯 企画情報
+</h2>
+
+
+<label>
+企画名
+</label>
 
 <input 
 id="eventName"
 type="text"
-placeholder="企画名を入力">
+placeholder="例：七夕ありがとう企画">
 
-<br><br>
 
-<input 
+
+<label>
+賞品
+</label>
+
+<input
 id="prizeName"
 type="text"
-placeholder="賞品名を入力">
+placeholder="例：555Pay">
+
 
 
 </section>
-<section class="card">
-
-<h2>👥 応募者入力</h2>
-
-<textarea id="entryList"
-placeholder="応募者を1行ずつ入力してください"></textarea>
 
 
-<div class="count-area">
 
-<label>🏆 当選人数</label>
 
-<input 
+
+<section class="box">
+
+
+<h2>
+👥 応募者入力
+</h2>
+
+
+<textarea
+id="entryList"
+placeholder="応募者を1人ずつ入力&#10;例&#10;@aaa&#10;@bbb&#10;@ccc">
+</textarea>
+
+
+
+<div id="participantInfo">
+
+応募者数：0名
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="box">
+
+
+<h2>
+🏆 当選人数
+</h2>
+
+
+<input
 id="winnerCount"
 type="number"
 value="1"
 min="1">
 
-</div>
 
 
-<button id="drawButton">
-🎲 抽選開始！
+</section>
+
+
+
+
+
+<button
+id="drawButton"
+class="main-button">
+
+🎲 抽選開始
+
 </button>
 
 
-<button id="againButton" class="sub-button">
-🔁 再抽選
+<button
+id="againButton"
+class="sub-button">
+
+🔄 再抽選
+
+</button>
+
+
+
+<section class="box result-box">
+
+
+<h2>
+🎉 結果
+</h2>
+
+
+<div id="result">
+
+まだ抽選していません
+
+</div>
+
+
+</section>
+
+
+<section class="box">
+
+
+<h2>
+📋 当選結果
+</h2>
+
+
+<button
+id="copyButton"
+class="sub-button">
+
+📋 結果をコピー
+
+</button>
+
+
+<button
+id="imageButton"
+class="sub-button">
+
+📸 当選画像作成
+
 </button>
 
 
 </section>
 
 
-<section class="card">
-
-<h2>📊 結果</h2>
-
-<div id="participantInfo">
-応募者数：0名
-</div>
 
 
-<div id="result">
-まだ抽選していません
-</div>
 
-<div id="shareCard" style="display:none;">
+<section class="box">
+
+
+<h2>
+📜 抽選履歴
+</h2>
+
+
+<ul id="history">
+
+</ul>
+
+
+</section>
+
+
+
+
+
+<!-- X投稿用画像カード -->
+
+<div id="shareCard">
+
 
 <div class="share-logo">
-🎁 こつこつ抽選メーカー
+
+🐣 じみちにこつこつ抽選メーカー
+
 </div>
+
 
 
 <div class="share-title">
+
 🎉 当選発表 🎉
+
 </div>
+
+
 
 
 <div class="share-item">
@@ -101,9 +235,13 @@ min="1">
 🎯 企画名
 
 <p id="shareEvent">
+
 </p>
 
 </div>
+
+
+
 
 
 <div class="share-item">
@@ -111,9 +249,13 @@ min="1">
 🎁 賞品
 
 <p id="sharePrize">
+
 </p>
 
 </div>
+
+
+
 
 
 <div class="share-item">
@@ -121,9 +263,13 @@ min="1">
 🏆 当選者
 
 <p id="shareWinner">
+
 </p>
 
 </div>
+
+
+
 
 
 <div class="share-footer">
@@ -133,37 +279,22 @@ min="1">
 </div>
 
 
-</div>
-
-
-<button id="copyButton" class="copy-button">
-📋 当選結果をコピー
-</button>
-
-<button id="imageButton" class="copy-button">
-📸 当選画像を作成
-</button>
-
-</section>
-
-
-<section class="card">
-
-<h2>🏆 抽選履歴</h2>
-
-<ul id="history"></ul>
-
-</section>
-
 
 </div>
 
 
-<div id="confetti"></div>
+
+
+
+</main>
+
+
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
