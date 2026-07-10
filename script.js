@@ -380,4 +380,27 @@ newWindow.document.write(
     });
 
 
-});
+// 📸 X投稿用カードへ反映
+
+function updateShareCard(){
+
+    const eventName =
+    document.getElementById("eventName").value;
+
+
+    const prizeName =
+    document.getElementById("prizeName").value;
+
+
+    document.getElementById("shareEvent").textContent =
+    eventName || "こつこつ企画";
+
+
+    document.getElementById("sharePrize").textContent =
+    prizeName || "素敵なプレゼント";
+
+
+    document.getElementById("shareWinner").innerHTML =
+    winners.join("<br>");
+
+}
