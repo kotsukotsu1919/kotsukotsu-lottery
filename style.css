@@ -377,3 +377,31 @@ to {
 
 
 }
+
+/* 🏆こつこつってぃ〜 当選者スペシャル */
+
+#shareWinner {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff3a6,
+        #ffffff
+    );
+
+    border-radius:25px;
+
+    padding:25px;
+
+    font-size:50px;
+
+    color:#ff5a5f;
+
+    font-weight:900;
+
+    border:5px solid #ffd166;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.15);
+
+}
