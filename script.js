@@ -254,3 +254,45 @@ againButton.addEventListener(
 "click",
 reLottery
 );
+
+// 当選結果コピー機能
+
+const copyButton =
+document.getElementById("copyButton");
+
+
+copyButton.addEventListener(
+"click",
+()=>{
+
+
+    if(winners.length===0){
+
+        alert("先に抽選してください🙏");
+
+        return;
+
+    }
+
+
+    const text =
+
+`🎉当選者発表🎉
+
+🏆当選おめでとうございます✨
+
+${winners.join("\n")}
+
+ご参加ありがとうございました🎁
+
+🎁こつこつ抽選メーカー`;
+
+
+
+    navigator.clipboard.writeText(text);
+
+
+    alert("📋 当選結果をコピーしました！");
+
+
+});
