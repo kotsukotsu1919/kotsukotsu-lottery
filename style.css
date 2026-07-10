@@ -384,3 +384,93 @@ button {
     border-radius:20px;
 
 }
+
+/* 🎁 X投稿用 当選カード */
+
+#shareCard {
+
+    width:600px;
+
+    padding:45px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8dc,
+        #ffffff
+    );
+
+    border-radius:35px;
+
+    border:8px solid #ffd166;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.2);
+
+    font-weight:bold;
+
+}
+
+
+.share-logo {
+
+    font-size:28px;
+
+    color:#ff8c00;
+
+    margin-bottom:25px;
+
+}
+
+
+.share-title {
+
+    font-size:42px;
+
+    color:#ff5a5f;
+
+    margin-bottom:35px;
+
+}
+
+
+.share-item {
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    font-size:22px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+.share-item p {
+
+    margin:15px 0 0;
+
+    font-size:28px;
+
+    color:#333;
+
+}
+
+
+.share-footer {
+
+    margin-top:30px;
+
+    font-size:20px;
+
+    color:#777;
+
+}
