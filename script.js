@@ -275,15 +275,37 @@ copyButton.addEventListener(
     }
 
 
-    const text =
+const eventName =
+document.getElementById("eventName").value;
+
+
+const prizeName =
+document.getElementById("prizeName").value;
+
+
+
+const text =
 
 `🎉当選者発表🎉
 
-🏆当選おめでとうございます✨
+
+🎯企画名
+${eventName || "こつこつ企画"}
+
+
+🎁賞品
+${prizeName || "素敵なプレゼント"}
+
+
+🏆当選者
 
 ${winners.join("\n")}
 
-ご参加ありがとうございました🎁
+
+おめでとうございます✨
+
+ご参加ありがとうございました😊
+
 
 🎁こつこつ抽選メーカー`;
 
