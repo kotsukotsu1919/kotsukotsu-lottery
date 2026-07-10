@@ -74,6 +74,9 @@ function lottery(){
 
 
         showWinner();
+        
+        
+        updateShareCard();
 
 
         saveHistory();
