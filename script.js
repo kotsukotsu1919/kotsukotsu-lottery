@@ -349,7 +349,7 @@ const imageContent =
 document.getElementById("imageContent");
 
 
-imageCard.style.display="block";
+imageCard.style.visibility="visible";
 
 imageContent.innerHTML =
 result.innerHTML;
