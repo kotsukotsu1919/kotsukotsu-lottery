@@ -319,3 +319,65 @@ button {
     margin:10px;
 
 }
+
+/* 📸 当選画像専用カード */
+
+#imageCard {
+
+    display:none;
+
+    width:600px;
+
+    padding:40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff3b0,
+        #ffffff
+    );
+
+    border-radius:30px;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    color:#333;
+
+    border:5px solid #ffd166;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+#imageCard::before {
+
+    content:"🎉 当選発表 🎉";
+
+    display:block;
+
+    font-size:40px;
+
+    color:#ff8800;
+
+    margin-bottom:25px;
+
+}
+
+
+#imageContent {
+
+    margin:25px 0;
+
+    padding:20px;
+
+    background:white;
+
+    border-radius:20px;
+
+}
