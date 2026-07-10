@@ -463,10 +463,12 @@ function updateShareCard(){
 
 
     document
-    .getElementById("shareWinner")
-    .innerHTML =
+.getElementById("shareWinner")
+.innerHTML =
 
-    winners.join("<br>");
+winners
+.map(w => w + "さん")
+.join("<br>");
 
 
 
