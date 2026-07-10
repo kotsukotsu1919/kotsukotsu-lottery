@@ -262,3 +262,15 @@ button {
     }
 
 }
+.copy-button {
+
+    background:
+    linear-gradient(
+    135deg,
+    #4facfe,
+    #00f2fe
+    );
+
+    margin-top:15px;
+
+}
