@@ -315,6 +315,21 @@ textarea {
 
 }
 
+/* 🏆 当選者を主役表示 */
+
+#shareWinner {
+
+    font-size:45px;
+
+    color:#ff5a5f;
+
+    font-weight:900;
+
+    margin-top:20px;
+
+    line-height:1.5;
+
+}
 
 
 .share-footer {
