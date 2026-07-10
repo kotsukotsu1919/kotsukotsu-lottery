@@ -318,3 +318,51 @@ ${winners.join("\n")}
 
 
 });
+
+// 当選画像作成機能
+
+const imageButton =
+document.getElementById("imageButton");
+
+
+imageButton.addEventListener(
+"click",
+()=>{
+
+
+    if(winners.length===0){
+
+        alert("先に抽選してください🙏");
+
+        return;
+
+    }
+
+
+    const target =
+    document.getElementById("result");
+
+
+    html2canvas(target)
+    .then(canvas=>{
+
+
+        const link =
+        document.createElement("a");
+
+
+        link.download =
+        "こつこつ抽選結果.png";
+
+
+        link.href =
+        canvas.toDataURL();
+
+
+        link.click();
+
+
+    });
+
+
+});
