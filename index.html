@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎁こつこつ抽選メーカー</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>🎁こつこつ抽選メーカー</h1>
+<p>〜公平・簡単・爆速抽選〜</p>
+</header>
+
+
+<section class="card">
+
+<h2>👥 応募者入力</h2>
+
+<textarea id="entryList"
+placeholder="応募者を1行ずつ入力してください"></textarea>
+
+
+<div class="count-area">
+
+<label>🏆 当選人数</label>
+
+<input 
+id="winnerCount"
+type="number"
+value="1"
+min="1">
+
+</div>
+
+
+<button id="drawButton">
+🎲 抽選開始！
+</button>
+
+
+<button id="againButton" class="sub-button">
+🔁 再抽選
+</button>
+
+
+</section>
+
+
+<section class="card">
+
+<h2>📊 結果</h2>
+
+<div id="participantInfo">
+応募者数：0名
+</div>
+
+
+<div id="result">
+まだ抽選していません
+</div>
+
+
+</section>
+
+
+<section class="card">
+
+<h2>🏆 抽選履歴</h2>
+
+<ul id="history"></ul>
+
+</section>
+
+
+</div>
+
+
+<div id="confetti"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
