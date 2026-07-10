@@ -381,6 +381,8 @@ newWindow.document.write(
 
 
     });
+    
+});
 
 
 // 📸 X投稿用カードへ反映
