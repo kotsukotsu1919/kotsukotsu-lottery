@@ -386,6 +386,8 @@ newWindow.document.write(
 // 📸 X投稿用カードへ反映
 
 function updateShareCard(){
+    
+    document.getElementById("shareCard").style.display="block";
 
     const eventName =
     document.getElementById("eventName").value;
