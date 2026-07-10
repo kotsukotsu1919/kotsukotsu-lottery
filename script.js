@@ -416,3 +416,151 @@ alert(
 
 
 });
+
+
+// X投稿用カード更新
+
+function updateShareCard(){
+
+
+    const shareCard =
+    document.getElementById("shareCard");
+
+
+    shareCard.style.display =
+    "block";
+
+
+
+    const eventName =
+    document
+    .getElementById("eventName")
+    .value;
+
+
+
+    const prizeName =
+    document
+    .getElementById("prizeName")
+    .value;
+
+
+
+    document
+    .getElementById("shareEvent")
+    .textContent =
+
+    eventName ||
+    "こつこつ企画";
+
+
+
+    document
+    .getElementById("sharePrize")
+    .textContent =
+
+    prizeName ||
+    "素敵なプレゼント";
+
+
+
+    document
+    .getElementById("shareWinner")
+    .innerHTML =
+
+    winners.join("<br>");
+
+
+
+}
+
+
+
+
+
+
+// 抽選ボタン
+
+drawButton.addEventListener(
+"click",
+lottery
+);
+
+
+
+
+// 再抽選ボタン
+
+againButton.addEventListener(
+"click",
+reLottery
+);
+
+
+
+
+
+
+// 画像作成
+
+document
+.getElementById("imageButton")
+.addEventListener(
+"click",
+()=>{
+
+
+    if(winners.length===0){
+
+        alert("先に抽選してください🙏");
+
+        return;
+
+    }
+
+
+
+    updateShareCard();
+
+
+
+    const card =
+    document.getElementById("shareCard");
+
+
+
+    html2canvas(card)
+    .then(canvas=>{
+
+
+        const image =
+        canvas.toDataURL(
+            "image/png"
+        );
+
+
+
+        const win =
+        window.open();
+
+
+
+        win.document.write(
+
+        `
+
+        <img
+        src="${image}"
+        style="width:100%;">
+
+        `
+
+        );
+
+
+
+    });
+
+
+
+});
