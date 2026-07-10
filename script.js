@@ -351,15 +351,19 @@ imageButton.addEventListener(
         document.createElement("a");
 
 
-        link.download =
-        "こつこつ抽選結果.png";
+const img =
+canvas.toDataURL("image/png");
 
 
-        link.href =
-        canvas.toDataURL();
+const newWindow =
+window.open();
 
 
-        link.click();
+newWindow.document.write(
+`
+<img src="${img}" style="width:100%;">
+`
+);
 
 
     });
