@@ -342,6 +342,17 @@ imageButton.addEventListener(
 const target =
 document.querySelector(".winner-card") || document.getElementById("result");
 
+const imageCard =
+document.getElementById("imageCard");
+
+const imageContent =
+document.getElementById("imageContent");
+
+
+imageCard.style.display="block";
+
+imageContent.innerHTML =
+result.innerHTML;
 
     html2canvas(target)
     .then(canvas=>{
