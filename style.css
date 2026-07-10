@@ -1,10 +1,16 @@
 * {
-    box-sizing: border-box;
+
+    box-sizing:border-box;
+
 }
 
+
 body {
-    margin: 0;
-    padding: 20px;
+
+    margin:0;
+
+    padding:20px;
+
     font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -12,382 +18,228 @@ body {
     Arial,
     sans-serif;
 
-    background: linear-gradient(
+    background:
+    linear-gradient(
         135deg,
-        #fff7e6,
-        #ffeef5
+        #fff8e7,
+        #ffe9f0
     );
 
-    color: #333;
+    color:#333;
+
 }
 
-
-.container {
-    max-width:600px;
-    margin:auto;
-}
 
 
 header {
-    text-align:center;
-    margin-bottom:20px;
-}
-
-
-header h1 {
-    color:#ff7a00;
-    font-size:28px;
-}
-
-
-.card {
-
-    background:white;
-
-    padding:20px;
-
-    margin-bottom:20px;
-
-    border-radius:20px;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.08);
-
-}
-
-
-textarea {
-
-    width:100%;
-
-    height:180px;
-
-    padding:15px;
-
-    border-radius:15px;
-
-    border:2px solid #ffd28a;
-
-    font-size:16px;
-
-}
-
-
-.count-area {
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin:15px 0;
-
-}
-
-
-input {
-
-    width:80px;
-
-    padding:10px;
 
     text-align:center;
-
-    border-radius:10px;
-
-    border:2px solid #ffd28a;
-
-}
-
-
-button {
-
-    width:100%;
-
-    padding:15px;
-
-    margin-top:10px;
-
-    border:none;
-
-    border-radius:15px;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    color:white;
-
-    background:
-    linear-gradient(
-    135deg,
-    #ff9900,
-    #ffcc33
-    );
-
-}
-
-
-.sub-button {
-
-    background:
-    linear-gradient(
-    135deg,
-    #888,
-    #aaa
-    );
-
-}
-
-
-#result {
-
-    min-height:80px;
-
-    background:#fff8e8;
-
-    border-radius:15px;
-
-    padding:15px;
-
-    text-align:center;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-}
-
-
-.confetti {
-
-    position:fixed;
-
-    width:10px;
-
-    height:10px;
-
-    top:-10px;
-
-    animation:
-    fall 3s linear forwards;
-
-}
-
-
-@keyframes fall {
-
-    to {
-
-        transform:
-        translateY(100vh)
-        rotate(720deg);
-
-        opacity:0;
-
-    }
-
-}
-/* 🎉 当選カード Ver.1.1 */
-
-.winner-card {
-
-    background:
-    linear-gradient(
-        135deg,
-        #fff8dc,
-        #ffffff
-    );
-
-    border-radius:25px;
-
-    padding:25px;
-
-    margin-top:15px;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.12);
-
-    border:
-    3px solid #ffd166;
-
-    animation:
-    pop 0.5s ease;
-
-}
-
-
-.winner-title {
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    color:#ff8c00;
-
-    margin-bottom:20px;
-
-}
-
-
-.winner-name {
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    color:#333;
-
-}
-
-
-@keyframes pop {
-
-    0% {
-
-        transform:scale(0.7);
-
-        opacity:0;
-
-    }
-
-
-    100% {
-
-        transform:scale(1);
-
-        opacity:1;
-
-    }
-
-}
-.copy-button {
-
-    background:
-    linear-gradient(
-    135deg,
-    #4facfe,
-    #00f2fe
-    );
-
-    margin-top:15px;
-
-}
-
-/* 📸画像保存用 強化 */
-
-.winner-card {
-
-    background:
-    linear-gradient(
-        135deg,
-        #fff7d6,
-        #ffffff
-    );
-
-    padding:30px;
-
-    border-radius:25px;
-
-    text-align:center;
-
-    color:#333;
-
-    min-width:300px;
-
-}
-
-
-.winner-title {
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    color:#ff8c00;
-
-}
-
-
-.winner-name {
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    margin:10px;
-
-}
-
-/* 📸 当選画像専用カード */
-
-#imageCard {
-
-    position:absolute;
-
-    left:-9999px;
-
-
-    width:600px;
-
-    padding:40px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #fff3b0,
-        #ffffff
-    );
-
-    border-radius:30px;
-
-    text-align:center;
-
-    font-size:26px;
-
-    font-weight:bold;
-
-    color:#333;
-
-    border:5px solid #ffd166;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.15);
-
-}
-
-
-#imageCard::before {
-
-    content:"🎉 当選発表 🎉";
-
-    display:block;
-
-    font-size:40px;
-
-    color:#ff8800;
 
     margin-bottom:25px;
 
 }
 
 
-#imageContent {
 
-    margin:25px 0;
+header h1 {
 
-    padding:20px;
+    font-size:28px;
 
-    background:white;
+    margin:0;
 
-    border-radius:20px;
+    color:#ff8c00;
 
 }
 
-/* 🎁 X投稿用 当選カード */
+
+
+header p {
+
+    margin-top:10px;
+
+    color:#777;
+
+}
+
+
+
+
+main {
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+
+.box {
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+h2 {
+
+    margin-top:0;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+input,
+textarea {
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:8px;
+
+    margin-bottom:15px;
+
+    border-radius:15px;
+
+    border:2px solid #eee;
+
+    font-size:16px;
+
+}
+
+
+
+textarea {
+
+    height:180px;
+
+    resize:none;
+
+}
+
+
+
+
+.main-button {
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff8c00;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+
+.sub-button {
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#ffd166;
+
+    color:#333;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+.result-box {
+
+    text-align:center;
+
+}
+
+
+
+.winner-card {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff5b7,
+        #ffffff
+    );
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:
+    5px solid #ffd166;
+
+}
+
+
+
+.winner-title {
+
+    font-size:28px;
+
+    color:#ff5a5f;
+
+    font-weight:bold;
+
+}
+
+
+
+.winner-name {
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* 画像生成カード */
 
 #shareCard {
+
+    display:none;
 
     width:600px;
 
@@ -396,81 +248,117 @@ button {
     background:
     linear-gradient(
         135deg,
-        #fff8dc,
+        #fff3a6,
         #ffffff
     );
 
     border-radius:35px;
 
-    border:8px solid #ffd166;
+    border:
+    8px solid #ffd166;
 
     text-align:center;
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,0.2);
+}
+
+
+
+.share-logo {
+
+    font-size:26px;
+
+    color:#ff8c00;
 
     font-weight:bold;
 
 }
 
 
-.share-logo {
-
-    font-size:28px;
-
-    color:#ff8c00;
-
-    margin-bottom:25px;
-
-}
-
 
 .share-title {
 
-    font-size:42px;
+    margin:30px 0;
+
+    font-size:45px;
 
     color:#ff5a5f;
 
-    margin-bottom:35px;
+    font-weight:bold;
 
 }
+
 
 
 .share-item {
 
     background:white;
 
-    border-radius:20px;
-
     padding:20px;
 
     margin:20px 0;
 
-    font-size:22px;
+    border-radius:20px;
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.08);
+    font-size:20px;
 
 }
+
 
 
 .share-item p {
 
-    margin:15px 0 0;
+    font-size:30px;
 
-    font-size:28px;
+    font-weight:bold;
 
-    color:#333;
+    margin:10px;
 
 }
 
 
+
 .share-footer {
 
-    margin-top:30px;
-
-    font-size:20px;
+    margin-top:25px;
 
     color:#777;
+
+}
+
+
+
+
+
+
+/* 紙吹雪 */
+
+.confetti {
+
+    position:fixed;
+
+    top:-20px;
+
+    width:12px;
+
+    height:20px;
+
+    animation:
+    fall 4s linear forwards;
+
+}
+
+
+
+@keyframes fall {
+
+
+to {
+
+    transform:
+    translateY(100vh)
+    rotate(720deg);
+
+}
+
 
 }
