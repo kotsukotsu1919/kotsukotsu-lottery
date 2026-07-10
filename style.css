@@ -324,7 +324,10 @@ button {
 
 #imageCard {
 
-    display:none;
+    position:absolute;
+
+    left:-9999px;
+
 
     width:600px;
 
