@@ -339,8 +339,8 @@ imageButton.addEventListener(
     }
 
 
-    const target =
-    document.getElementById("result");
+const target =
+document.querySelector(".winner-card") || document.getElementById("result");
 
 
     html2canvas(target)
