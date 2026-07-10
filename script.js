@@ -96,30 +96,49 @@ function lottery(){
 
 function showWinner(){
 
+    result.innerHTML = `
 
-    result.innerHTML =
-    `
-    <div>
-    🎉🎉🎉
+    <div class="winner-card">
+
+        <div class="winner-title">
+        🎉 当選おめでとうございます 🎉
+        </div>
+
+
+        <div>
+        🎁 こつこつ抽選メーカー
+        </div>
+
+
+        <br>
+
+
+        ${
+        winners.map((w,i)=>
+
+        `
+        <div class="winner-name">
+        🏆 ${i+1}位
+        </div>
+
+        <div class="winner-name">
+        ${w}
+        </div>
+
+        <br>
+
+        `
+
+        ).join("")
+        }
+
+
+        <div>
+        ✨ 素敵なご縁がありますように ✨
+        </div>
+
+
     </div>
-
-    <br>
-
-    <div>
-    当選おめでとうございます！
-    </div>
-
-    <br>
-
-    ${winners.map((w,i)=>
-
-    `
-    🏆 ${i+1}位<br>
-    <strong>${w}</strong>
-    <br><br>
-    `
-
-    ).join("")}
 
     `;
 
