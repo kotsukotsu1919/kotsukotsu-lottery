@@ -545,15 +545,49 @@ document
 
         win.document.write(
 
-        `
+`
 
-        <img
-        src="${image}"
-        style="width:100%;">
+<!DOCTYPE html>
+<html>
 
-        `
+<head>
 
-        );
+<title>
+🐣こつこつってぃ〜 当選発表
+</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+
+<body style="
+margin:0;
+text-align:center;
+background:#fff8e7;
+">
+
+
+<img
+src="${image}"
+style="
+width:100%;
+max-width:600px;
+">
+
+
+<p>
+画像を長押しして保存できます📱
+</p>
+
+
+</body>
+
+</html>
+
+`
+
+);
 
 
 
